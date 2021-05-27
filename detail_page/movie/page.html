@@ -3,11 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <title>pickle_content</title>
-    <link rel="stylesheet" href="page_style.css" />
-    <link rel="stylesheet" href="../../common/headers/headers.css" />
+    <link rel="stylesheet" href="./page_style.css" />
     <link rel="stylesheet" href="../../common/footer/footer.css" />
-    <link rel="stylesheet" href="../../common/login/login.css" />
-    <link rel="stylesheet" href="../../common/login/signup.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap"
@@ -45,7 +42,7 @@
                   <a href="../../index.html">
                     <img
                       class="main-logo"
-                      src="../../src/icons/logo.jpeg"
+                      src="../../src/img/logo.png"
                       alt="로고"
                       width="25px"
                       height="25px"
@@ -56,13 +53,13 @@
                   <a href="../../index.html" class="master-title">PICKLE</a>
                 </li>
                 <li class="outer-menu-item" id="outer-menu-movies">
-                  <a href="../../index.html" class="menu-title">MOVIE</a>
+                  <a href="../../tabs/movie.html" class="menu-title">MOVIE</a>
                 </li>
                 <li class="outer-menu-item" id="outer-menu-books">
-                  <a href="../../book.html" class="menu-title">BOOK</a>
+                  <a href="../../tabs/book.html" class="menu-title">BOOK</a>
                 </li>
                 <li class="outer-menu-item" id="outer-menu-music">
-                  <a href="../../music.html" class="menu-title">MUSIC</a>
+                  <a href="../../tabs/music.html" class="menu-title">MUSIC</a>
                 </li>
               </ul>
             </div>
@@ -76,65 +73,7 @@
                     value="검색"
                     style="cursor: pointer"
                   />
-                  <button id="loginBtn" class="login-button">로그인</button>
-                  <button id="signupBtn" class="signup-button">회원가입</button>
                 </form>
-              </div>
-            </div>
-            <div class="wrapper">
-              <div class="loginWrapper hidden">
-                <div class="loginDiv">
-                  <p id="loginExitBtn">X</p>
-                  <p class="signIn">로그인</p>
-                  <form class="loginForm">
-                    <input
-                      class="loginIdInput"
-                      type="text"
-                      placeholder="사용자 이름"
-                    />
-                    <input
-                      class="loginPassInput"
-                      type="password"
-                      placeholder="비밀번호"
-                    />
-                    <a class="loginSubmitBtn" href="../project/index.html"
-                      >로그인</a
-                    >
-                    <p class="forgot">비밀번호를 잊으셨나요?</p>
-                  </form>
-                </div>
-              </div>
-
-              <div class="signupWrapper hidden">
-                <div class="signupDiv">
-                  <p id="signUpExitBtn">X</p>
-                  <p class="signup">회원가입</p>
-                  <form class="signupForm">
-                    <input
-                      class="signupNameInput"
-                      type="text"
-                      placeholder="이름"
-                    />
-                    <input
-                      class="signupCodeInput"
-                      type="text"
-                      placeholder="학번"
-                    />
-                    <input
-                      class="signupIdInput"
-                      type="text"
-                      placeholder="사용자 이름"
-                    />
-                    <input
-                      class="signupPassInput"
-                      type="password"
-                      placeholder="비밀번호"
-                    />
-                    <a class="signupSubmitBtn" href="../project/index.html"
-                      >회원가입</a
-                    >
-                  </form>
-                </div>
               </div>
             </div>
           </nav>
@@ -253,6 +192,5 @@
     <footer>
       <div id="main-footer"></div>
     </footer>
-    <script src="../../common/login/login.js"></script>
   </body>
 </html>

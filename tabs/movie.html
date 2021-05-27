@@ -1,0 +1,140 @@
+<html>
+  <head>
+    <title>pickle</title>
+    <link rel="stylesheet" href="./tab_style.css" />
+    <link rel="stylesheet" href="../scroll/book/book.css" />
+    <link rel="stylesheet" href="../common/footer/footer.css" />
+    <meta charset="utf-8" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#main-footer").load("../common/footer/footer.html");
+        $("#movie_seoyoung").load("../scroll/movie/movie_seoyoung.html");
+        $("#movie_minji").load("../scroll/movie/movie_minji.html");
+        $("#movie_seonghyun").load("../scroll/movie/movie_seonghyun.html");
+        $("#movie_eunjae").load("../scroll/movie/movie_eunjae.html");
+      });
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 200) {
+            $(".top").fadeIn();
+          } else {
+            $(".top").fadeOut();
+          }
+        });
+        $(".top").click(function () {
+          $("html, body").animate({ scrollTop: 0 }, 400);
+          return false;
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="page-wrapper">
+      <nav id="main-header-navigation">
+        <div id="headers">
+          <nav id="main-navigation">
+            <div class="pull-left">
+              <ul class="outer-menu">
+                <li class="outer-menu-logo">
+                  <a href="../index.html">
+                    <img
+                      class="main-logo"
+                      src="../src/img/logo.png"
+                      alt="로고"
+                      width="25px"
+                      height="25px"
+                    />
+                  </a>
+                </li>
+                <li class="outer-menu-title" id="outer-menu-title">
+                  <a href="../index.html" class="master-title">PICKLE</a>
+                </li>
+                <li class="outer-menu-item" id="outer-menu-movies">
+                  <a href="./movie.html" class="menu-title">MOVIE</a>
+                </li>
+                <li class="outer-menu-item" id="outer-menu-books">
+                  <a href="./book.html" class="menu-title">BOOK</a>
+                </li>
+                <li class="outer-menu-item" id="outer-menu-music">
+                  <a href="./music.html" class="menu-title">MUSIC</a>
+                </li>
+              </ul>
+            </div>
+            <div class="pull-right">
+              <div class="right-menu">
+                <form>
+                  <input type="text" class="input-search" />
+                  <input
+                    type="submit"
+                    class="input-search-submit"
+                    value="검색"
+                    style="cursor: pointer"
+                  />
+                </form>
+              </div>
+            </div>
+            </div>
+          </nav>
+        </div>
+      </nav>
+      <section id="main-section">
+        <div id="content">
+          <article>
+            <div class="userpicktitle">
+              <div class="titlebox usernametitle">
+                <h2 class="Picks">은재's MOVIE PICK!</h2>
+              </div>
+              <div class="titlebox genreBox"><a href="#">액션</a></div>
+              <div class="titlebox genreBox"><a href="#">공포</a></div>
+              <div class="titlebox genreBox"><a href="#">로맨스</a></div>
+            </div>
+            <div class="scroll_content" id="movie_eunjae"></div>
+            <div class="userpicktitle">
+              <div class="titlebox usernametitle">
+                <h2 class="Picks">서영's MOVIE PICK!</h2>
+              </div>
+              <div class="titlebox genreBox"><a href="#">액션</a></div>
+              <div class="titlebox genreBox"><a href="#">공포</a></div>
+              <div class="titlebox genreBox"><a href="#">로맨스</a></div>
+            </div>
+            <div class="scroll_content" id="movie_seoyoung"></div>
+
+            <div class="userpicktitle">
+              <div class="titlebox usernametitle">
+                <h2 class="Picks">민지's MOVIE PICK!</h2>
+              </div>
+              <div class="titlebox genreBox"><a href="#">액션</a></div>
+              <div class="titlebox genreBox"><a href="#">공포</a></div>
+              <div class="titlebox genreBox"><a href="#">로맨스</a></div>
+            </div>
+            <div class="scroll_content" id="movie_minji"></div>
+
+            <div class="userpicktitle">
+              <div class="titlebox usernametitle">
+                <h2 class="Picks">성현's MOVIE PICK!</h2>
+              </div>
+              <div class="titlebox genreBox"><a href="#">액션</a></div>
+              <div class="titlebox genreBox"><a href="#">공포</a></div>
+              <div class="titlebox genreBox"><a href="#">로맨스</a></div>
+            </div>
+            <div class="scroll_content" id="movie_seonghyun"></div>
+          </article>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div id="main-footer"></div>
+    </footer>
+    <img
+      src="../src/img/top_arrow1.gif"
+      alt=""
+      class="top"
+      width="50px;"
+      height="50px;"
+      style="cursor: pointer"
+    />
+  </body>
+</html>

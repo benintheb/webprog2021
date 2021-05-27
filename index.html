@@ -2,201 +2,47 @@
   <head>
     <title>pickle</title>
     <link rel="shortcuticon" href="./favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="./scroll/book/book.css" />
-    <link rel="stylesheet" href="./common/footer/footer.css" />
-    <link rel="stylesheet" href="./common/headers/headers.css" />
-    <link rel="stylesheet" href="./common/login/login.css" />
-    <link rel="stylesheet" href="./common/login/signup.css" />
+    <link rel="stylesheet" href="./style.css" />
     <meta charset="utf-8" />
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $("#main-footer").load("./common/footer/footer.html");
-        $("#movie_seoyoung").load("./scroll/movie/movie_seoyoung.html");
-        $("#movie_minji").load("./scroll/movie/movie_minji.html");
-        $("#movie_seonghyun").load("./scroll/movie/movie_seonghyun.html");
-        $("#movie_eunjae").load("./scroll/movie/movie_eunjae.html");
-      });
-      $(document).ready(function () {
-        $(window).scroll(function () {
-          if ($(this).scrollTop() > 200) {
-            $(".top").fadeIn();
-          } else {
-            $(".top").fadeOut();
-          }
-        });
-        $(".top").click(function () {
-          $("html, body").animate({ scrollTop: 0 }, 400);
-          return false;
-        });
-      });
-    </script>
   </head>
   <body>
-    <div id="page-wrapper">
-      <nav id="main-header-navigation">
-        <div id="headers">
-          <nav id="main-navigation">
-            <div class="pull-left">
-              <ul class="outer-menu">
-                <li class="outer-menu-logo">
-                  <a href="../../index.html">
-                    <img
-                      class="main-logo"
-                      src="../../src/icons/logo.jpeg"
-                      alt="로고"
-                      width="25px"
-                      height="25px"
-                    />
-                  </a>
-                </li>
-                <li class="outer-menu-title" id="outer-menu-title">
-                  <a href="./index.html" class="master-title">PICKLE</a>
-                </li>
-                <li class="outer-menu-item" id="outer-menu-movies">
-                  <a href="../../index.html" class="menu-title">MOVIE</a>
-                </li>
-                <li class="outer-menu-item" id="outer-menu-books">
-                  <a href="../../book.html" class="menu-title">BOOK</a>
-                </li>
-                <li class="outer-menu-item" id="outer-menu-music">
-                  <a href="../../music.html" class="menu-title">MUSIC</a>
-                </li>
-              </ul>
-            </div>
-            <div class="pull-right">
-              <div class="right-menu">
-                <form>
-                  <input type="text" class="input-search" />
-                  <input
-                    type="submit"
-                    class="input-search-submit"
-                    value="검색"
-                    style="cursor: pointer"
-                  />
-                  <button id="loginBtn" class="login-button">로그인</button>
-                  <button id="signupBtn" class="signup-button">회원가입</button>
-                </form>
-              </div>
-            </div>
-            <div class="wrapper">
-              <div class="loginWrapper hidden">
-                <div class="loginDiv">
-                  <p id="loginExitBtn">X</p>
-                  <p class="signIn">로그인</p>
-                  <form class="loginForm">
-                    <input
-                      class="loginIdInput"
-                      type="text"
-                      placeholder="사용자 이름"
-                    />
-                    <input
-                      class="loginPassInput"
-                      type="password"
-                      placeholder="비밀번호"
-                    />
-                    <a class="loginSubmitBtn" href="../project/index.html"
-                      >로그인</a
-                    >
-                    <p class="forgot">비밀번호를 잊으셨나요?</p>
-                  </form>
-                </div>
-              </div>
-
-              <div class="signupWrapper hidden">
-                <div class="signupDiv">
-                  <p id="signUpExitBtn">X</p>
-                  <p class="signup">회원가입</p>
-                  <form class="signupForm">
-                    <input
-                      class="signupNameInput"
-                      type="text"
-                      placeholder="이름"
-                    />
-                    <input
-                      class="signupCodeInput"
-                      type="text"
-                      placeholder="학번"
-                    />
-                    <input
-                      class="signupIdInput"
-                      type="text"
-                      placeholder="사용자 이름"
-                    />
-                    <input
-                      class="signupPassInput"
-                      type="password"
-                      placeholder="비밀번호"
-                    />
-                    <a class="signupSubmitBtn" href="../project/index.html"
-                      >회원가입</a
-                    >
-                  </form>
-                </div>
-              </div>
-            </div>
-          </nav>
+    <div class="indexWrapper">
+      <div class="indexTopDiv">
+        <div class="indexIconDiv">
+          <img class="main-logo" src="./src/img/logo.png" alt="로고" />
+          <p class="logoText">PICKLE</p>
         </div>
-      </nav>
-      <section id="main-section">
-        <div id="content">
-          <article>
-            <div class="userpicktitle">
-              <div class="titlebox usernametitle">
-                <h2 class="Picks">은재's MOVIE PICK!</h2>
-              </div>
-              <div class="titlebox genreBox"><a href="#">액션</a></div>
-              <div class="titlebox genreBox"><a href="#">공포</a></div>
-              <div class="titlebox genreBox"><a href="#">로맨스</a></div>
-            </div>
-            <div class="scroll_content" id="movie_eunjae"></div>
-            <div class="userpicktitle">
-              <div class="titlebox usernametitle">
-                <h2 class="Picks">서영's MOVIE PICK!</h2>
-              </div>
-              <div class="titlebox genreBox"><a href="#">액션</a></div>
-              <div class="titlebox genreBox"><a href="#">공포</a></div>
-              <div class="titlebox genreBox"><a href="#">로맨스</a></div>
-            </div>
-            <div class="scroll_content" id="movie_seoyoung"></div>
+        <p class="descText">
+          여러분들에게 소개해 드리고 싶은 작품들을 <br />십시일반 모았습니다
+        </p>
+      </div>
 
-            <div class="userpicktitle">
-              <div class="titlebox usernametitle">
-                <h2 class="Picks">민지's MOVIE PICK!</h2>
-              </div>
-              <div class="titlebox genreBox"><a href="#">액션</a></div>
-              <div class="titlebox genreBox"><a href="#">공포</a></div>
-              <div class="titlebox genreBox"><a href="#">로맨스</a></div>
-            </div>
-            <div class="scroll_content" id="movie_minji"></div>
-
-            <div class="userpicktitle">
-              <div class="titlebox usernametitle">
-                <h2 class="Picks">성현's MOVIE PICK!</h2>
-              </div>
-              <div class="titlebox genreBox"><a href="#">액션</a></div>
-              <div class="titlebox genreBox"><a href="#">공포</a></div>
-              <div class="titlebox genreBox"><a href="#">로맨스</a></div>
-            </div>
-            <div class="scroll_content" id="movie_seonghyun"></div>
-          </article>
+      <div class="videoDiv">
+        <div class="movieWrapper videoWrapper">
+          <div class="topicBtn" onclick="location.href='./tabs/movie.html';">
+            MOVIE
+          </div>
+          <video autoplay muted loop id="frontVideo">
+            <source src="./src/video/movie.mp4" type="video/mp4" />
+          </video>
         </div>
-      </section>
+        <div class="bookWrapper videoWrapper">
+          <div class="topicBtn" onclick="location.href='./tabs/book.html';">
+            BOOK
+          </div>
+          <video autoplay muted loop id="frontVideo">
+            <source src="./src/video/book.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="musicWrapper videoWrapper">
+          <div class="topicBtn" onclick="location.href='./tabs/music.html';">
+            MUSIC
+          </div>
+          <video autoplay muted loop id="frontVideo">
+            <source src="./src/video/music.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
     </div>
-    <footer>
-      <div id="main-footer"></div>
-    </footer>
-    <img
-      src="./src/icons/top_arrow1.gif"
-      alt=""
-      class="top"
-      width="50px;"
-      height="50px;"
-      style="cursor: pointer"
-    />
-    <script src="./common/login/login.js"></script>
   </body>
 </html>
