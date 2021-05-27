@@ -1,0 +1,35 @@
+footer {
+  background-color: #3c3935;
+}
+
+footer img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-top: 7px;
+  padding-left: 10px;
+}
+
+.foo_div {
+  float: left;
+}
+
+.foo_div1 {
+  text-align: center;
+}
+
+.foo_div1 span {
+  font-size: 15px;
+  color: white;
+}
+
+.foo_div1 p {
+  margin-top: 5px;
+  color: white;
+}
+
+.foo_div1 img {
+  width: 25px;
+  height: 25px;
+  margin-top: 10px;
+}

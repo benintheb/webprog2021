@@ -1,0 +1,13 @@
+.card {
+    background-color: white;
+    border-color: white;
+    flex: 0 0 auto;
+    width: 243.5px;
+    margin-right: 20px;
+  }
+
+  .card_image {
+      border-radius: 5px;
+      width: 224px; height: 224px;
+      margin: 0;
+  }

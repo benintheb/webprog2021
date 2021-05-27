@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>pickle_content</title>
+    <link rel="stylesheet" href="page_style.css" />
+    <link rel="stylesheet" href="../../common/headers/headers.css" />
+    <link rel="stylesheet" href="../../common/footer/footer.css" />
+    <link rel="stylesheet" href="../../common/login/login.css" />
+    <link rel="stylesheet" href="../../common/login/signup.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#main-footer").load("../../common/footer/footer.html");
+      });
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 200) {
+            $(".top").fadeIn();
+          } else {
+            $(".top").fadeOut();
+          }
+        });
+        $(".top").click(function () {
+          $("html, body").animate({ scrollTop: 0 }, 400);
+          return false;
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="page-wrapper">
+      <nav id="main-header-navigation">
+        <div id="headers">
+          <nav id="main-navigation">
+            <div class="pull-left">
+              <ul class="outer-menu">
+                <li class="outer-menu-logo">
+                  <a href="../../index.html">
+                    <img
+                      class="main-logo"
+                      src="../../src/icons/logo.jpeg"
+                      alt="로고"
+                      width="25px"
+                      height="25px"
+                    />
+                  </a>
+                </li>
+                <li class="outer-menu-title" id="outer-menu-title">
+                  <a href="../../index.html" class="master-title">PICKLE</a>
+                </li>
+                <li class="outer-menu-item" id="outer-menu-movies">
+                  <a href="../../index.html" class="menu-title">MOVIE</a>
+                </li>
+                <li class="outer-menu-item" id="outer-menu-books">
+                  <a href="../../book.html" class="menu-title">BOOK</a>
+                </li>
+                <li class="outer-menu-item" id="outer-menu-music">
+                  <a href="../../music.html" class="menu-title">MUSIC</a>
+                </li>
+              </ul>
+            </div>
+            <div class="pull-right">
+              <div class="right-menu">
+                <form>
+                  <input type="text" class="input-search" />
+                  <input
+                    type="submit"
+                    class="input-search-submit"
+                    value="검색"
+                    style="cursor: pointer"
+                  />
+                  <button id="loginBtn" class="login-button">로그인</button>
+                  <button id="signupBtn" class="signup-button">회원가입</button>
+                </form>
+              </div>
+            </div>
+            <div class="wrapper">
+              <div class="loginWrapper hidden">
+                <div class="loginDiv">
+                  <p id="loginExitBtn">X</p>
+                  <p class="signIn">로그인</p>
+                  <form class="loginForm">
+                    <input
+                      class="loginIdInput"
+                      type="text"
+                      placeholder="사용자 이름"
+                    />
+                    <input
+                      class="loginPassInput"
+                      type="password"
+                      placeholder="비밀번호"
+                    />
+                    <a class="loginSubmitBtn" href="../project/index.html"
+                      >로그인</a
+                    >
+                    <p class="forgot">비밀번호를 잊으셨나요?</p>
+                  </form>
+                </div>
+              </div>
+
+              <div class="signupWrapper hidden">
+                <div class="signupDiv">
+                  <p id="signUpExitBtn">X</p>
+                  <p class="signup">회원가입</p>
+                  <form class="signupForm">
+                    <input
+                      class="signupNameInput"
+                      type="text"
+                      placeholder="이름"
+                    />
+                    <input
+                      class="signupCodeInput"
+                      type="text"
+                      placeholder="학번"
+                    />
+                    <input
+                      class="signupIdInput"
+                      type="text"
+                      placeholder="사용자 이름"
+                    />
+                    <input
+                      class="signupPassInput"
+                      type="password"
+                      placeholder="비밀번호"
+                    />
+                    <a class="signupSubmitBtn" href="../project/index.html"
+                      >회원가입</a
+                    >
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </nav>
+      <div id="content1">
+        <img src="http://placehold.it/1366x300" />
+        <div id="section">
+          <img src="http://placehold.it/240x360" />
+          <div id="explanation">
+            <h2>해리포터와 마법사의 돌</h2>
+            <div class="category" name="open">개봉</div>
+            <div class="value" name="open">2001.12.14</div>
+            <div class="category" name="genre">장르</div>
+            <div class="value" name="genre">판타지, 가족, 모험, 액션</div>
+            <div class="category" name="country">국가</div>
+            <div class="value" name="country">영국, 미국</div>
+            <div class="category" name="distributor">배급</div>
+            <div class="value" name="distributor">워너 브라더스 코리아(주)</div>
+
+            <div class="box1" id="attendance">
+              <p>관객수 26만명</p>
+            </div>
+            <div class="box1" id="grade">
+              <p>평점 ★9.33</p>
+            </div>
+            <div class="rate">
+              <form>
+                <input type="button" id="keep" value="찜하기" />
+                <input type="text" class="grading" value="" /><input
+                  type="button"
+                  class="grading"
+                  value="평가하기"
+                />
+              </form>
+            </div>
+          </div>
+          <div class="graph">
+            <div id="chart">
+              <h3>별점 그래프</h3>
+              <div id="graph"></div>
+            </div>
+          </div>
+        </div>
+        <div class="lowerDescDiv">
+          <div id="left">
+            <div id="summary">
+              <h3>줄거리</h3>
+              <div id="summary_content">
+                해리 포터(다니엘 래드클리프 분)는 위압적인 버논 숙부(리챠드
+                그리피스 분)와 냉담한 이모 페투니아 (피오나 쇼 분), 욕심 많고
+                버릇없는 사촌 더즐리(해리 멜링 분) 밑에서 갖은 구박을 견디며
+                계단 밑 벽장에서 생활한다. 이모네 식구들 역시 해리와의 동거가
+                불편하기는 마찬가지. 이모 페투니아에겐 해리가 이상한(?) 언니
+                부부에 관한 기억을 떠올리게 만드는 달갑지 않은 존재다. 11살
+                생일이 며칠 앞으로 다가왔지만 한번도 생일파티를 치르거나 제대로
+                된 생일선물을 받아 본 적이 없는 해리로서는 특별히 신날 것도 기대
+                할 것도 없다. 11살 생일을 며칠 앞둔 어느 날 해리에게 초록색
+                잉크로 쓰여진 한 통의 편지가 배달된다. 그 편지의 내용은 다름
+                아닌 해리의 11살 생일을 맞이하여 전설적인“호그와트 마법학교”에서
+                보낸 입학초대장이었다. 그리고 해리의 생일을 축하하러 온 거인
+                해그리드는 해리가 모르고 있었던 해리의 진정한 정체를 알려주는데.
+                그것은 바로 해리가 굉장한 능력을 지닌 마법사라는 것! 해리는
+                해그리드의 지시대로 자신을 구박하던 이모네 집을 주저없이 떠나
+                호그와트행을 택한다. 런던의 킹스크로스 역에 있는 비밀의 9와 3/4
+                승장장에서 호그와트 특급열차를 탄 해리는 열차 안에서 같은
+                호그와트 마법학교 입학생인 헤르미온느 그레인저(엠마 왓슨 분)와
+                론 위즐리 (루퍼트 그린트 분)를 만나 친구가 된다. 이들과 함께
+                호그와트에 입학한 해리는, 놀라운 모험의 세계를 경험하며 갖가지
+                신기한 마법들을 배워 나간다. 또한 빗자루를 타고 공중을
+                날아다니며 경기하는 스릴 만점의 퀴디치 게임에서 스타로 탄생하게
+                되며, 용, 머리가 셋 달린 개, 유니콘, 켄타우루스, 히포그리프(말
+                몸에 독수리 머리와 날개를 가진 괴물)등 신비한 동물들과 마주치며
+                모험을 즐긴다. 그러던 어느 날 해리는 호그와트 지하실에 `영원한
+                생을 가져다주는 마법사의 돌'이 비밀리에 보관되어 있다는 것을
+                알게되고, 해리의 부모님을 죽인 볼드모트가 그 돌을 노린다는
+                사실도 알게 된다. 볼드모트는 바로 해리를 죽이려다 실패하고
+                이마에 번개모양의 흉터를 남긴 장본인이다. 해리는 볼드모트로부터
+                마법의 돌과 호그와트 마법학교를 지키기 위해 필사의 노력을
+                하는데...
+              </div>
+            </div>
+            <div id="character">
+              <h3>출연 / 제작</h3>
+              <div id="character_list">
+                <img
+                  src="https://i.pinimg.com/564x/4e/59/cf/4e59cf11e65cd15b486b9aa324fc3dbb.jpg"
+                />
+                <img
+                  src="https://i.pinimg.com/564x/4e/59/cf/4e59cf11e65cd15b486b9aa324fc3dbb.jpg"
+                />
+                <img
+                  src="https://i.pinimg.com/564x/4e/59/cf/4e59cf11e65cd15b486b9aa324fc3dbb.jpg"
+                />
+                <img
+                  src="https://i.pinimg.com/564x/4e/59/cf/4e59cf11e65cd15b486b9aa324fc3dbb.jpg"
+                />
+                <img
+                  src="https://i.pinimg.com/564x/4e/59/cf/4e59cf11e65cd15b486b9aa324fc3dbb.jpg"
+                />
+              </div>
+            </div>
+          </div>
+          <div id="right">
+            <div id="comment">
+              <div class="review">
+                <h3>리뷰 제목</h3>
+                <p>리뷰 내용</p>
+                <p>별점 닉네임</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div id="main-footer"></div>
+    </footer>
+    <script src="../../common/login/login.js"></script>
+  </body>
+</html>
