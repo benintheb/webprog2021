@@ -1,131 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap");
+@import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
+
 * {
   margin: 0;
   padding: 0;
   list-style: none;
   text-decoration: none;
-  font-family: sans-serif, Geneva, "Lucida Sans", "Lucida Sans Regular",
-    "Lucida Grande", "Lucida Sans Unicode", Verdana;
+  font-family: "roboto", "Noto Sans KR", "Apple SD Gothic Neo", "Nanum Gothic",
+    sans-serif;
 }
 
 *::-webkit-scrollbar {
   display: none;
 }
 
-#page-wrapper {
-  background: white;
-  height: fit-content;
-  padding: 20px 30px;
-  border-radius: 5px;
-  box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+body {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.page-wrapper {
+  background-color: #1d1d1b;
+  min-width: 1320px;
 }
 
 /* 헤더 */
 
-.master-title {
-  font-size: 30px;
-  color: #181818;
-}
-#main-navigation {
-  border-bottom: 1px solid #c8c8c8;
-  margin-bottom: 20px;
-  height: 50px;
-}
-.pull-left {
-  float: left;
+.header {
+  width: 100vw;
+  height: 90px;
+  min-width: 1320px;
+
+  margin-top: 10px;
+
+  border-bottom: 1px solid #94c93d;
+
+  display: flex;
+  justify-content: space-between;
 }
 
-.pull-right {
-  float: right;
+.nav-left {
+  margin: 0 60px;
+
+  display: flex;
 }
-.outer-menu-item {
-  float: left;
-  position: relative;
-  padding-left: 20px;
+
+.nav-left > .logoDiv > a {
+  margin-top: 5px;
+
+  display: flex;
 }
-.main-logo {
-  width: 35px;
-  height: 35px;
+
+.nav-left > .logoDiv > a > .main-logo {
+  width: 70px;
+  height: 70px;
 }
-.outer-menu-title {
-  font-weight: bold;
-  float: left;
-  padding-left: 15px;
-  padding-right: 100px;
-  position: relative;
-  color: #353535a2;
+
+.nav-left > .logoDiv > a > .header-title {
+  font-family: Rockwell;
+  font-size: 40px;
+
+  color: white;
+
+  margin-top: 20px;
+
+  margin-left: 10px;
 }
-.outer-menu-logo {
-  float: left;
-  padding-left: 15px;
-  position: relative;
+
+.nav-left > .tabs {
+  display: flex;
+  margin: 30px 0 0 60px;
+
+  font-size: 20px;
 }
-.outer-menu-item > a:hover {
-  color: black;
-  text-shadow: 2px 2px 3px grey;
+
+.nav-left > .tabs > .tabItem {
+  margin-left: 70px;
 }
-.outer-menu-item > a:visited {
-  color: black;
-  text-shadow: 2px 2px 3px grey;
+
+.nav-left > .tabs > .tabItem > a {
+  color: #d7d7d7;
 }
-.menu-title {
-  display: block;
+
+.nav-right {
+  margin-top: 30px;
+  margin-left: 30px;
+
+  display: flex;
+}
+
+.searchDiv {
+  background-color: #d7d7d7;
+  border-radius: 2px;
+  width: 220px;
+  height: 33px;
+
+  display: flex;
+
+  justify-content: flex-end;
+}
+.searchDiv > .searchLogo {
+  width: 20px;
+  height: 20px;
+  margin: auto;
+}
+
+.searchDiv > .searchInput {
+  background-color: #d7d7d7;
   height: 30px;
-  line-height: 30px;
-  text-align: center;
-  padding: 5px 20px;
+  width: 180px;
+
+  border: none;
+  outline: none;
+
+  font-size: 14px;
+  font-weight: 300;
+
+  margin-top: 1px;
 }
 
-.login-bar {
-  height: 26px;
-  padding: 7px;
-  padding-right: 100px;
-}
-
-.right-menu {
-  height: 26px;
-  padding: 7px;
-  padding-right: 100px;
-}
-
-.input-search {
-  display: block;
-  float: left;
-
-  background-color: #ffffff;
+.loginBtn {
   border: 1px solid #cccccc;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-  border-radius: 8px 0px 0px 8px;
-  width: 150px;
-  height: 24px;
-  padding: 0 0 0 10px;
-  font-size: 12px;
-  color: #555555;
+  border-radius: 8px;
+  background-color: transparent;
+
+  color: #d7d7d7;
+
+  height: 35px;
+
+  padding: 0 15px;
+  margin-left: 5px;
+
+  cursor: pointer;
 }
 
-.input-search:focus {
-  border-color: rgba(82, 168, 236, 0.8);
-  outline: 0;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-}
-
-.input-search-submit {
-  display: block;
-  float: left;
-
-  width: 50px;
-  height: 24px;
-  border: 1px solid #cccccc;
-  border-radius: 0px 8px 8px 0px;
-  margin-left: -1px;
-
-  vertical-align: top;
-  display: inline-block;
+.login-button {
+  margin-left: 30px;
 }
 
 /* 하단 */
 
 #main-section {
-  background-color: white;
   margin: 0 auto;
   margin-top: 50px;
   width: 100%;
@@ -137,29 +154,9 @@
   margin: 0 auto;
 }
 
-.titlebox {
-  display: inline-block;
-  margin-right: 15px;
-}
-
-.genreBox {
-  height: 7px;
-  margin: 0px 3px;
-  padding: 10px 15px;
-  background-color: rgb(188, 235, 96);
-  border-radius: 50px;
-}
-
-.genreBox > a {
-  text-align: center;
-  line-height: 7px;
-  text-decoration: none;
-  color: white;
-}
-
-img.top {
+img.topScrollArrow {
   position: fixed;
   right: 5%;
   bottom: 150px;
-  display: none;
+  color: white;
 }

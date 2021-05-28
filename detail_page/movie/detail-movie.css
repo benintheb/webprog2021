@@ -1,16 +1,153 @@
-/* 전체페이지 */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap");
+@import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "roboto", "Noto Sans KR", "Apple SD Gothic Neo", "Nanum Gothic",
+    sans-serif;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  display: flex;
+
+  flex-direction: column;
+}
 
 /* 헤더 네비게이션 */
-/* #header {
-    padding:10px;
-} */
+
+.page-wrapper {
+  background-color: #1d1d1b;
+  min-width: 1320px;
+}
+
+/* 헤더 */
+
+.header {
+  width: 100vw;
+  height: 90px;
+  min-width: 1320px;
+
+  margin-top: 10px;
+
+  border-bottom: 1px solid #94c93d;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-left {
+  margin: 0 60px;
+
+  display: flex;
+}
+
+.nav-left > .logoDiv > a {
+  margin-top: 5px;
+
+  display: flex;
+}
+
+.nav-left > .logoDiv > a > .main-logo {
+  width: 70px;
+  height: 70px;
+}
+
+.nav-left > .logoDiv > a > .header-title {
+  font-family: Rockwell;
+  font-size: 40px;
+
+  color: white;
+
+  margin-top: 20px;
+
+  margin-left: 10px;
+}
+
+.nav-left > .tabs {
+  display: flex;
+  margin: 30px 0 0 60px;
+
+  font-size: 20px;
+}
+
+.nav-left > .tabs > .tabItem {
+  margin-left: 70px;
+}
+
+.nav-left > .tabs > .tabItem > a {
+  color: #d7d7d7;
+}
+
+.nav-right {
+  margin-top: 30px;
+  margin-left: 30px;
+
+  display: flex;
+}
+
+.searchDiv {
+  background-color: #d7d7d7;
+  border-radius: 2px;
+  width: 220px;
+  height: 33px;
+
+  display: flex;
+
+  justify-content: flex-end;
+}
+.searchDiv > .searchLogo {
+  width: 20px;
+  height: 20px;
+  margin: auto;
+}
+
+.searchDiv > .searchInput {
+  background-color: #d7d7d7;
+  height: 30px;
+  width: 180px;
+
+  border: none;
+  outline: none;
+
+  font-size: 14px;
+  font-weight: 300;
+
+  margin-top: 1px;
+}
+
+.loginBtn {
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  background-color: transparent;
+
+  color: #d7d7d7;
+
+  height: 35px;
+
+  padding: 0 15px;
+  margin-left: 5px;
+
+  cursor: pointer;
+}
+
+.login-button {
+  margin-left: 30px;
+}
+/* 배경이미지 ~ 중앙부 */
 
 #content {
   margin: 0 auto;
   overflow: hidden;
 }
 
-/* 배경이미지 ~ 중앙부 */
 #content1 {
   height: fit-content;
   width: 1366px;

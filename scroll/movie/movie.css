@@ -1,46 +1,79 @@
 .scrolling-wrapper {
   width: fit-content;
   display: flex;
+  flex-direction: column;
   flex-wrap: nowrap;
   scroll-behavior: smooth;
+
   margin-top: 15px;
   margin-bottom: 45px;
 }
+
+.cardDiv {
+  display: flex;
+  margin-top: 15px;
+}
+
+.pickTitleDiv {
+  display: flex;
+}
+
+.pickTitle {
+  color: white;
+
+  font-size: 28px;
+}
+
+.genreBox {
+  height: 7px;
+  margin: 8px 0 0 15px;
+  padding: 10px 15px;
+  background-color: #07703c;
+  border-radius: 5px;
+
+  color: #d7d7d7;
+
+  text-align: center;
+  line-height: 7px;
+}
+
 .info {
   border-top: none;
-  background-color: white;
   position: relative;
   height: 105px;
   width: 243.2px;
 }
-.info_title,
+
+.info_title {
+  color: #d7d7d7;
+  margin: 3px 0;
+  margin-left: 5px;
+  font-size: 22px;
+}
+
 .info_year,
 .info_rating_image,
 .info_length {
-  padding-left: 8px;
-  height: 27px;
+  color: #d7d7d7;
+  margin: 5px 0 0 5px;
+
+  font-size: 13px;
+  font-weight: 300;
 }
-.info_title {
-  padding-top: 3px;
-  font-weight: bold;
-}
-.info_length {
-}
-.info_rating {
-}
+
 .info_rating_image {
   width: 15px;
   height: 15px;
 }
+
 .info_rating_rating {
-  padding-top: 5px;
-  padding-left: 4px;
+  margin-left: 4px;
   font-size: 15px;
+
+  color: #d7d7d7;
 }
 
 .card {
-  background-color: white;
-  border-color: 1px solid black;
   flex: 0 0 auto;
   width: 243.5px;
   margin-right: 20px;

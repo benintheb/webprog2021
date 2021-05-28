@@ -2,14 +2,12 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>pickle_content</title>
-    <link rel="stylesheet" href="./page_style.css" />
+    <title>PICKLE</title>
+    <link rel="stylesheet" href="./detail-movie.css" />
     <link rel="stylesheet" href="../../common/footer/footer.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="../../common/login/login.css" />
+    <link rel="stylesheet" href="../../common/login/signup.css" />
+
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript">
@@ -19,12 +17,12 @@
       $(document).ready(function () {
         $(window).scroll(function () {
           if ($(this).scrollTop() > 200) {
-            $(".top").fadeIn();
+            $(".topScrollArrow").fadeIn();
           } else {
-            $(".top").fadeOut();
+            $(".topScrollArrow").fadeOut();
           }
         });
-        $(".top").click(function () {
+        $(".topScrollArrow").click(function () {
           $("html, body").animate({ scrollTop: 0 }, 400);
           return false;
         });
@@ -32,51 +30,111 @@
     </script>
   </head>
   <body>
-    <div id="page-wrapper">
+    <div class="page-wrapper">
       <nav id="main-header-navigation">
-        <div id="headers">
-          <nav id="main-navigation">
-            <div class="pull-left">
-              <ul class="outer-menu">
-                <li class="outer-menu-logo">
-                  <a href="../../index.html">
-                    <img
-                      class="main-logo"
-                      src="../../src/img/logo.png"
-                      alt="로고"
-                      width="25px"
-                      height="25px"
-                    />
-                  </a>
-                </li>
-                <li class="outer-menu-title" id="outer-menu-title">
-                  <a href="../../index.html" class="master-title">PICKLE</a>
-                </li>
-                <li class="outer-menu-item" id="outer-menu-movies">
-                  <a href="../../tabs/movie.html" class="menu-title">MOVIE</a>
-                </li>
-                <li class="outer-menu-item" id="outer-menu-books">
-                  <a href="../../tabs/book.html" class="menu-title">BOOK</a>
-                </li>
-                <li class="outer-menu-item" id="outer-menu-music">
-                  <a href="../../tabs/music.html" class="menu-title">MUSIC</a>
-                </li>
-              </ul>
+        <div class="header">
+          <div class="nav-left">
+            <div class="logoDiv">
+              <a href="../../index.html">
+                <img
+                  class="main-logo"
+                  src="../../src/img/logo.png"
+                  alt="로고"
+                  width="25px"
+                  height="25px"
+                />
+                <p class="header-title">PICKLE</p>
+              </a>
             </div>
-            <div class="pull-right">
-              <div class="right-menu">
-                <form>
-                  <input type="text" class="input-search" />
+            <ul class="tabs">
+              <li class="tabItem" id="tab-movies">
+                <a
+                  href="../../tabs/movie.html"
+                  class="menu-title"
+                  style="color: white"
+                  >영화</a
+                >
+              </li>
+              <li class="tabItem" id="tab-books">
+                <a href="../../tabs/book.html" class="menu-title">책</a>
+              </li>
+              <li class="tabItem" id="tab-music">
+                <a href="../../tabs/music.html" class="menu-title">음악</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="nav-right">
+            <div class="searchDiv">
+              <img
+                class="searchLogo"
+                src="../../src/img/search.png"
+                alt="검색"
+              />
+              <input type="text" class="searchInput" />
+            </div>
+            <button id="loginBtn" class="login-button loginBtn">로그인</button>
+            <button id="signupBtn" class="signup-button loginBtn">
+              회원가입
+            </button>
+          </div>
+
+          <div class="loginOuterWrapper">
+            <div class="loginWrapper hidden">
+              <div class="loginDiv">
+                <p id="loginExitBtn">X</p>
+                <p class="signIn">로그인</p>
+                <form class="loginForm">
                   <input
-                    type="submit"
-                    class="input-search-submit"
-                    value="검색"
-                    style="cursor: pointer"
+                    class="loginIdInput"
+                    type="text"
+                    placeholder="사용자 이름"
                   />
+                  <input
+                    class="loginPassInput"
+                    type="password"
+                    placeholder="비밀번호"
+                  />
+                  <a class="loginSubmitBtn" href="./detail-movie.html"
+                    >로그인</a
+                  >
+                  <p class="forgot">비밀번호를 잊으셨나요?</p>
                 </form>
               </div>
             </div>
-          </nav>
+
+            <div class="signupWrapper hidden">
+              <div class="signupDiv">
+                <p id="signUpExitBtn">X</p>
+                <p class="signup">회원가입</p>
+                <form class="signupForm">
+                  <input
+                    class="signupNameInput"
+                    type="text"
+                    placeholder="이름"
+                  />
+                  <input
+                    class="signupCodeInput"
+                    type="text"
+                    placeholder="학번"
+                  />
+                  <input
+                    class="signupIdInput"
+                    type="text"
+                    placeholder="사용자 이름"
+                  />
+                  <input
+                    class="signupPassInput"
+                    type="password"
+                    placeholder="비밀번호"
+                  />
+                  <a class="signupSubmitBtn" href="./detail-movie.html"
+                    >회원가입</a
+                  >
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
       </nav>
       <div id="content1">
@@ -192,5 +250,6 @@
     <footer>
       <div id="main-footer"></div>
     </footer>
+    <script src="../../common/login/login.js"></script>
   </body>
 </html>

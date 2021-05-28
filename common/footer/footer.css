@@ -1,35 +1,38 @@
-footer {
-  background-color: #3c3935;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700&display=swap");
+@import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
+
+* {
+  font-family: "roboto", "Noto Sans KR", "Apple SD Gothic Neo", "Nanum Gothic",
+    sans-serif;
 }
 
-footer img {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  margin-top: 7px;
-  padding-left: 10px;
+.footerWrapper {
+  background-color: #ed1a37;
+  opacity: 90%;
+  width: 100vw;
+  min-width: 1320px;
+  height: fit-content;
+
+  display: flex;
+
+  justify-content: space-between;
 }
 
-.foo_div {
-  float: left;
+.footer-content {
+  padding: 70px;
 }
 
-.foo_div1 {
-  text-align: center;
-}
-
-.foo_div1 span {
-  font-size: 15px;
-  color: white;
-}
-
-.foo_div1 p {
+.footer-info > p {
+  color: #d7d7d7;
   margin-top: 5px;
-  color: white;
 }
 
-.foo_div1 img {
-  width: 25px;
-  height: 25px;
-  margin-top: 10px;
+.footer-icons {
+  margin-top: 50px;
+  margin-right: 50px;
+}
+
+.footer-icons > a > img {
+  margin-right: 10px;
 }

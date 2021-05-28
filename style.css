@@ -1,10 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700&display=swap");
+@import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
+
 * {
   margin: 0;
   padding: 0;
   list-style: none;
   text-decoration: none;
-  font-family: sans-serif, Geneva, "Lucida Sans", "Lucida Sans Regular",
-    "Lucida Grande", "Lucida Sans Unicode", Verdana;
+  font-family: "roboto", "Noto Sans KR", "Apple SD Gothic Neo", "Nanum Gothic",
+    sans-serif;
 }
 
 *::-webkit-scrollbar {
@@ -12,7 +16,7 @@
 }
 
 .indexWrapper {
-  background-color: black;
+  background-color: #1d1d1b;
   display: flex;
   height: 100vh;
   width: 100vw;
@@ -61,7 +65,6 @@
   color: white;
   font-size: 1.5vw;
 
-  font-family: sans-serif;
   font-weight: 200;
 }
 
@@ -81,7 +84,7 @@
   position: absolute;
 
   left: 50%;
-  bottom: 200px;
+  bottom: 150px;
   transform: translate(-50%);
 
   opacity: 60%;
@@ -94,7 +97,6 @@
 
   cursor: pointer;
 
-  font-family: Geneva;
   font-size: 2vh;
   font-weight: 800;
 
