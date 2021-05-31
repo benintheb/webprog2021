@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>PICKLE</title>
+    <link rel="stylesheet" href="./detail-music.css" />
+    <link rel="stylesheet" href="../../common/footer/footer.css" />
+    <link rel="stylesheet" href="../../common/login/login.css" />
+    <link rel="stylesheet" href="../../common/login/signup.css" />
+    <link rel="stylesheet" href="./graph.css"
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#main-footer").load("../../common/footer/footer.html");
+      });
+
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 200) {
+            $(".topScrollArrow").fadeIn();
+          } else {
+            $(".topScrollArrow").fadeOut();
+          }
+        });
+        $(".topScrollArrow").click(function () {
+          $("html, body").animate({ scrollTop: 0 }, 400);
+          return false;
+        });
+      });
+      
+    </script>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <nav id="main-header-navigation">
+        <div class="header">
+          <div class="nav-left">
+            <div class="logoDiv">
+              <a href="../../index.html">
+                <img
+                  class="main-logo"
+                  src="../../src/img/logo2.png"
+                  alt="로고"
+                />
+              </a>
+            </div>
+            <ul class="tabs">
+              <li class="tabItem" id="tab-movies">
+                <a
+                  href="../../tabs/movie.html"
+                  class="menu-title"   
+                  >영화</a
+                >
+              </li>
+              <li class="tabItem" id="tab-books">
+                <a href="../../tabs/book.html" class="menu-title">책</a>
+              </li>
+              <li class="tabItem" id="tab-music">
+                <a href="../../tabs/music.html" class="menu-title" style="color: white">음악</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="nav-right">
+            <div class="searchDiv">
+              <img
+                class="searchLogo"
+                src="../../src/img/search.png"
+                alt="검색"
+              />
+              <input type="text" class="searchInput" />
+            </div>
+            <button id="loginBtn" class="login-button loginBtn">로그인</button>
+            <button id="signupBtn" class="signup-button loginBtn">
+              회원가입
+            </button>
+          </div>
+          <div class="loginOuterWrapper">
+            <div class="loginWrapper hidden">
+              <div class="loginDiv">
+                <p id="loginExitBtn">X</p>
+                <p class="signIn">로그인</p>
+                <form class="loginForm">
+                  <input
+                    class="loginIdInput"
+                    type="text"
+                    placeholder="사용자 이름"
+                  />
+                  <input
+                    class="loginPassInput"
+                    type="password"
+                    placeholder="비밀번호"
+                  />
+                  <a class="loginSubmitBtn" href="./detail-movie.html"
+                    >로그인</a
+                  >
+                  <p class="forgot">비밀번호를 잊으셨나요?</p>
+                </form>
+              </div>
+            </div>
+
+            <div class="signupWrapper hidden">
+              <div class="signupDiv">
+                <p id="signUpExitBtn">X</p>
+                <p class="signup">회원가입</p>
+                <form class="signupForm">
+                  <input
+                    class="signupNameInput"
+                    type="text"
+                    placeholder="이름"
+                  />
+                  <input
+                    class="signupCodeInput"
+                    type="text"
+                    placeholder="학번"
+                  />
+                  <input
+                    class="signupIdInput"
+                    type="text"
+                    placeholder="사용자 이름"
+                  />
+                  <input
+                    class="signupPassInput"
+                    type="password"
+                    placeholder="비밀번호"
+                  />
+                  <a class="signupSubmitBtn" href="./detail-movie.html"
+                    >회원가입</a
+                  >
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="content1">
+        <img src="https://i.ytimg.com/vi/6AUR2KOvl3Q/maxresdefault.jpg" width="1366px" height = "300px" />
+        <div id="section">
+          <img src="https://pbs.twimg.com/media/EsBdVg3XUAIBPvU.jpg" width="240px" height="360px" />
+          <div id="explanation">
+            <div class="content-title">
+              <h2>Celebrity</h2>
+              <img id="heart" src="../src/heart.png" alt="heart" width = "20px" height="20px" onclick="src='../src/full-heart.png'"></div>
+              
+            <div class="pickTitleDiv">
+              <div class="genreBox">가요</div>
+              
+            </div>
+            
+            <div class="category" name="open">출시일</div>
+            <div class="value" name="open">2021.01.27</div>
+            <div class="category" name="country">가수</div>
+            <div class="value" name="country">아이유</div>
+            <div class="category" name="distributor">작곡</div>
+            <div class="value" name="distributor">Ryan S. Jhun, Jeppe London Bilsby, Lauritz Emil Christiansen, 아이유, Chloe Latimer, Celine Svanback</div>
+            <div class="category" name="distributor">작사</div>
+            <div class="value" name="distributor">아이유</div>
+            <div class="category" name="distributor">평점</div>
+            <div class="value" name="distributor">평점 ★4.9</div>
+          
+            
+          </div>
+          <div class="video-stream">
+            <iframe width="616px" height="360px" src="https://www.youtube.com/embed/0-q1KafFCLU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="lowerDescDiv">
+          <div id="left">
+            <div id="summary">
+              <h3>가사</h3>
+              <div id="summary_content">
+                <p>                  
+                  세상의 모서리<br>
+                  구부정하게 커버린<br>
+                  골칫거리 outsider<br><br>
+                  
+                  걸음걸이, 옷차림,<br>
+                  이어폰 너머 play list<br>
+                  음악까지 다 minor<br><br>
+                  
+                  넌 모르지
+                  떨군 고개 위<br>
+                  환한 빛 조명이<br>
+                  어딜 비추는지<br><br>
+                  
+                  느려도 좋으니<br>
+                  결국 알게 되길<br>
+                  The one and only<br>
+                  You are my celebrity<br><br>
+                  
+                  잊지마 넌 흐린 어둠 사이<br>
+                  왼손으로 그린 별 하나<br>
+                  보이니 그 유일함이 얼마나<br>
+                  아름다운지 말야<br>
+                  You are my celebrity<br><br>
+                  
+                  (You are, you are) Celebrity<br>
+                  (You are, you are) You are my celebrity<br>
+                  
+                  지쳐버린 표정 마치<br>
+                  전원을 꺼놓은 듯이<br>
+                  심장소린 too quiet<br><br>
+                  
+                  네가 가진 반짝거림,<br>
+                  상상력, identity<br>
+                  까지 모조리 diet<br><br>
+                  
+                  넌 모르지<br>
+                  아직 못다 핀<br>
+                  널 위해 쓰여진<br>
+                  오래된 사랑시<br><br>
+                  
+                  헤매도 좋으니<br>
+                  웃음 짓게 되길<br>
+                  The one and only<br>
+                  You are my celebrity<br><br>
+                  
+                  잊지마 넌 흐린 어둠 사이<br>
+                  왼손으로 그린 별 하나<br>
+                  보이니 그 유일함이 얼마나<br>
+                  아름다운지 말야<br>
+                  You are my celebrity<br><br>
+                  
+                  발자국마다 이어진 별자리<br>
+                  그 서투른 걸음이 새겨놓은 밑그림<br>
+                  오롯이 너를 만나러 가는 길<br>
+                  그리로 가면 돼 점선을 따라<br><br>
+                  
+                  잊지마 이 오랜 겨울 사이<br>
+                  언 틈으로 피울 꽃 하나<br>
+                  보이니 하루 뒤 봄이 얼마나<br>
+                  아름다울지 말야<br>
+                  You are my celebrity<br><br>
+                  
+                  Celebrity<br>
+                  You are my celebrity<br><br>
+                </p>
+              </div>
+            </div>
+            <div id="character">
+              <h3>가수 소개</h3>
+              <div class="cardDiv">
+                <div class="card">
+                  <img class="card_image" src="https://image.bugsm.co.kr/artist/images/1000/800491/80049126.jpg" />
+                </div>
+                <div class="card-author-info">
+                  <h3>아이유</h6><br>
+                  <p>아이유 (IU, 본명: 이지은, 본명 한자: 李知恩, 1993년 5월 16일 ~ )는 대한민국의 가수이자 배우, 유튜버이다. 배우로 활동할 때는 본명을 사용한다. '아이유(IU)' 라는 이름은 'I'와 'You'를 합친 합성어로 '너와 내가 음악으로 하나가 된다. ' 라는 의미이다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="right">
+            <div class="review-rate">
+            <h2>리뷰</h2>
+            <div class="rate">
+                <input type="radio" id="star5" name="rate" value="5" />
+                <label for="star5" title="text">5 stars</label>
+                <input type="radio" id="star4" name="rate" value="4" />
+                <label for="star4" title="text">4 stars</label>
+                <input type="radio" id="star3" name="rate" value="3" />
+                <label for="star3" title="text">3 stars</label>
+                <input type="radio" id="star2" name="rate" value="2" />
+                <label for="star2" title="text">2 stars</label>
+                <input type="radio" id="star1" name="rate" value="1" />
+                <label for="star1" title="text">1 star</label>
+              </div>
+              <input  type="text" class="write-review" value="한 줄 리뷰 작성하기" onclick="value=''"/>
+              <button id="commentBtn" class="comment-button" onclick="alert('댓글이 작성되었습니다.')">작성</button>
+            </div>
+              <div id="comment">
+                <div class="review">
+                  <p class="review-commenter">황상혁</p>
+                  <p class="review-rate">평점 ★3.4</p>
+                  <p>Celebrity가 무슨 뜻인가요?</p>               
+                </div>
+                <div class="review">
+                  <p class="review-commenter">이영범</p>
+                  <p class="review-rate">평점 ★4.4</p>
+                  <p>하루에 3번은 듣습니다. 아침 점심 저녁.</p>               
+                </div>
+                <div class="review">
+                  <p class="review-commenter">조세연</p>
+                  <p class="review-rate">평점 ★4.4</p>
+                  <p>아이유 남자친구 있나요?</p>               
+                </div>
+                <div class="review">
+                  <p class="review-commenter">김민지</p>
+                  <p class="review-rate">평점 ★4.7</p>
+                  <p>믿고 듣는 아이유!</p>             
+                </div>
+                <div class="review">
+                  <p class="review-commenter">손서영</p>
+                  <p class="review-rate">평점 ★5.0</p>
+                  <p>하루 종일 듣고있어요</p>
+                </div>
+                <div class="review">
+                  <p class="review-commenter">이은재</p>
+                  <p class="review-rate">평점 ★4.9</p>
+                  <p>역시 아이유ㅎㅎㅎ</p>
+                </div>
+                <div class="review">
+                  <p class="review-commenter">정성현</p>
+                  <p class="review-rate">평점 ★4.7</p>
+                  <p>아이유 좋아요</p>             
+                </div>
+             </div> 
+            </div>
+          </div>
+        </div>
+       
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div id="main-footer"></div>
+    </footer>
+    <script src="../../common/login/login.js"></script>
+  </body>
+</html>

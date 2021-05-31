@@ -51,18 +51,10 @@
   height: 100px;
 }
 
-.indexIconDiv > .logoText {
-  margin: 3vw 0 0 10px;
-  font-size: 3vw;
-  color: white;
-
-  font-family: Rockwell;
-}
-
 .descText {
   margin-top: 20px;
   color: white;
-  font-size: 1.4vw;
+  font-size: 28px;
 
   font-weight: 200;
 }
@@ -91,19 +83,19 @@
   padding: 20px 40px 20px 40px;
 
   color: white;
-  border: 1px solid white;
+  border: 2.5px solid white;
   border-radius: 5px;
 
   cursor: pointer;
 
   font-size: 2vh;
-  font-weight: 800;
+  font-weight: 400;
 
   transition: opacity 0.5s ease-in-out;
 }
 
 .videoWrapper > .topicBtn:hover {
-  opacity: 90%;
+  opacity: 100%;
 }
 
 .videoWrapper > .topicBtn:hover ~ video {

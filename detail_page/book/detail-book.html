@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>PICKLE</title>
+    <link rel="stylesheet" href="./detail-book.css" />
+    <link rel="stylesheet" href="../../common/footer/footer.css" />
+    <link rel="stylesheet" href="../../common/login/login.css" />
+    <link rel="stylesheet" href="../../common/login/signup.css" />
+    <link rel="stylesheet" href="./graph.css"
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#main-footer").load("../../common/footer/footer.html");
+      });
+
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 200) {
+            $(".topScrollArrow").fadeIn();
+          } else {
+            $(".topScrollArrow").fadeOut();
+          }
+        });
+        $(".topScrollArrow").click(function () {
+          $("html, body").animate({ scrollTop: 0 }, 400);
+          return false;
+        });
+      });
+      
+    </script>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <nav id="main-header-navigation">
+        <div class="header">
+          <div class="nav-left">
+            <div class="logoDiv">
+              <a href="../../index.html">
+                <img
+                  class="main-logo"
+                  src="../../src/img/logo2.png"
+                  alt="로고"
+                />
+                <!-- <p class="header-title">PICKLE</p> -->
+              </a>
+            </div>
+            <ul class="tabs">
+              <li class="tabItem" id="tab-movies">
+                <a
+                  href="../../tabs/movie.html"
+                  class="menu-title"
+                  >영화</a
+                >
+              </li>
+              <li class="tabItem" id="tab-books">
+                <a href="../../tabs/book.html" class="menu-title" style="color: white">책</a>
+              </li>
+              <li class="tabItem" id="tab-music">
+                <a href="../../tabs/music.html" class="menu-title">음악</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="nav-right">
+            <div class="searchDiv">
+              <img
+                class="searchLogo"
+                src="../../src/img/search.png"
+                alt="검색"
+              />
+              <input type="text" class="searchInput" />
+            </div>
+            <button id="loginBtn" class="login-button loginBtn">로그인</button>
+            <button id="signupBtn" class="signup-button loginBtn">
+              회원가입
+            </button>
+          </div>
+          <div class="loginOuterWrapper">
+            <div class="loginWrapper hidden">
+              <div class="loginDiv">
+                <p id="loginExitBtn">X</p>
+                <p class="signIn">로그인</p>
+                <form class="loginForm">
+                  <input
+                    class="loginIdInput"
+                    type="text"
+                    placeholder="사용자 이름"
+                  />
+                  <input
+                    class="loginPassInput"
+                    type="password"
+                    placeholder="비밀번호"
+                  />
+                  <a class="loginSubmitBtn" href="./detail-movie.html"
+                    >로그인</a
+                  >
+                  <p class="forgot">비밀번호를 잊으셨나요?</p>
+                </form>
+              </div>
+            </div>
+
+            <div class="signupWrapper hidden">
+              <div class="signupDiv">
+                <p id="signUpExitBtn">X</p>
+                <p class="signup">회원가입</p>
+                <form class="signupForm">
+                  <input
+                    class="signupNameInput"
+                    type="text"
+                    placeholder="이름"
+                  />
+                  <input
+                    class="signupCodeInput"
+                    type="text"
+                    placeholder="학번"
+                  />
+                  <input
+                    class="signupIdInput"
+                    type="text"
+                    placeholder="사용자 이름"
+                  />
+                  <input
+                    class="signupPassInput"
+                    type="password"
+                    placeholder="비밀번호"
+                  />
+                  <a class="signupSubmitBtn" href="./detail-movie.html"
+                    >회원가입</a
+                  >
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="content1">
+        <img src="../src/book-cover.jpg" width="1366px" height = "300px" />
+        <div id="section">
+          <img src="http://image.yes24.com/goods/29288225/800x0" width="240px" height="360px" />
+          <div id="explanation">
+            <div class="content-title">
+              <h2>쇼코의 미소</h2>
+              <img id="heart" src="../src/heart.png" alt="heart" width = "20px" height="20px" onclick="src='../src/full-heart.png'"></div>
+              
+            <div class="pickTitleDiv">
+              <div class="genreBox">단편소설</div>
+              
+            </div>
+            
+            <div class="category" name="open">출간일</div>
+            <div class="value" name="open">2016.07.04</div>
+            <div class="category" name="country">작가</div>
+            <div class="value" name="country">최은영</div>
+            <div class="category" name="distributor">출판사</div>
+            <div class="value" name="distributor">문학동네</div>
+            <div class="category" name="distributor">국가, 쪽수, 무게, 크기</div>
+            <div class="value" name="distributor">한국 | 296쪽 | 406g | 145*210*20mm</div>
+            <div class="category" name="distributor">평점</div>
+            <div class="value" name="distributor">평점 ★4.9</div>
+          
+            
+          </div>
+          <div class="video-stream">
+            <iframe width="616px;" height="360" src="https://www.youtube.com/embed/J8F2f-9EmrE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="lowerDescDiv">
+          <div id="left">
+            <div id="summary">
+              <h3>책소개</h3>
+              <div id="summary_content">
+                <p>                  
+                    “소설가로서 최은영의 가장 큰 미덕은
+                    그게 무슨 탐구든 반드시 근사한 이야기로 들려준다는 점이다.
+                    그녀가 앞으로 쓰게 될 근사한 이야기들이 바로 이 책에서 시작했다.”
+                    _김연수(소설가)<br><br><br>
+
+
+                    2013년 겨울, 『작가세계』 신인상에 중편소설 「쇼코의 미소」가 당선되어 등단, 그 작품으로 다음해 젊은작가상을 수상하면서 많은 사람들에게 특별한 인상으로 다가갔던 바로 그 신인 소설가 말이다. 
+                    그러나 이 ‘특별한 인상’은, 발표한 작품이라고는 등단작 「쇼코의 미소」 한 편밖에 없는 신인 작가가, 등단한 지 채 두 달이 되지 않은 시점에 젊은작가상을 수상했다는 것만을 의미하지 않는다. 
+                    저마다의 날카로운 감식안을 지닌 소설가와 평론가들로부터 공통의 감상을 이끌어냈다는 점에 그 특별함이 있다. 어떤 갑론을박도 없이 모두에게서 동일한 평가를 받는 작품이 탁월한 소설이라 말하려는 것이 아니다. 
+                    등단작에 대해 흔히 우리가 걸게 되는 기대―기존 작품과 구별되는 ‘낯섦’과 ‘전위’에 대한 요구―로부터 물러나, 별다른 기교 없이 담백하게 이야기를 풀어나가고, 
+                    그 정통적인 방식을 통해 읽는 이의 마음을 움직였다는 것에 「쇼코의 미소」가 지닌 특별함이 담겨 있다. 
+                    그러니까, “고레에다 히로카즈나 이누도 잇신 감독의 어떤 영화들처럼 거의 모든 영역에서 ‘진실하다’라는 느낌”(문학평론가 신형철)을 준다는 것, 그로부터 “소설이 주는 감동이란 무엇인가를 새삼 생각해보게 만들었다”(소설가 임철우)라는 것.
+                    <br><br><br>
+
+                    최은영은 등단 초기부터, “선천적으로 눈이나 위가 약한 사람이 있듯이 마음이 특별히 약해서 쉽게 부서지는 사람도 있는 법”이라고, 전혀 짐작할 수 없는 타인의 고통 앞에 겸손히 귀를 열고 싶다고 밝혀왔다. 최은영의 시선이 가닿는 곳 어디에나 사람이 자리해 있는 것은 바로 이 때문일 터. 총 7편의 작품이 수록된 최은영의 첫 소설집 『쇼코의 미소』는 사람의 마음이 흘러갈 수 있는 정밀한 물매를 만들어냄으로써, 우리들을 바로 그 ‘사람의 자리’로 이끈다.
+                    <br><br>
+                </p>
+              </div>
+            </div>
+            <div id="character">
+              <h3>저자 소개</h3>
+              <div class="cardDiv">
+                <div class="card">
+                  <img class="card_image" src="https://img0.yna.co.kr/photo/yna/YH/2018/07/02/PYH2018070221620001300_P2.jpg" />
+                </div>
+                <div class="card-author-info">
+                  <h3>최은영</h6><br>
+                  <p>고려대학교 국어국문학과를 졸업했다. 2013년 중편소설「쇼코의 미소」로 [작가세계] 신인상을 받으며 등단했다.<br><br>
+                     소설집 『쇼코의 미소』, 『내게 무해한 사람』을 펴냈다. 허균문학작가상, 김준성문학상, 이해조소설문학상, 문학동네 2014년 젊은작가상, 2017년 젊은작가상, 구상 문학상 젊은 작가상, 한국일보문학상을 받았다. <br><br>
+                    복날, 덫에 걸린 채 도망치다 다리를 잃고 구조된 개 ‘연아’와 일대일 결연을 맺었다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="right">
+            <div class="review-rate">
+            <h2>리뷰</h2>
+            <div class="rate">
+                <input type="radio" id="star5" name="rate" value="5" />
+                <label for="star5" title="text">5 stars</label>
+                <input type="radio" id="star4" name="rate" value="4" />
+                <label for="star4" title="text">4 stars</label>
+                <input type="radio" id="star3" name="rate" value="3" />
+                <label for="star3" title="text">3 stars</label>
+                <input type="radio" id="star2" name="rate" value="2" />
+                <label for="star2" title="text">2 stars</label>
+                <input type="radio" id="star1" name="rate" value="1" />
+                <label for="star1" title="text">1 star</label>
+              </div>
+              <input  type="text" class="write-review" value="한 줄 리뷰 작성하기" onclick="value=''"/>
+              <button id="commentBtn" class="comment-button" onclick="alert('댓글이 작성되었습니다.')">작성</button>
+            </div>
+              <div id="comment">
+                <div class="review">
+                  <p class="review-commenter">황상혁</p>
+                  <p class="review-rate">평점 ★4.4</p>
+                  <p>많은 생각이 드네요</p>               
+                </div>
+                <div class="review">
+                  <p class="review-commenter">손서영</p>
+                  <p class="review-rate">평점 ★4.9</p>
+                  <p>최근 본 소설 중에 가장 뭉클했던 것 같습니다</p>
+                </div>
+                <div class="review">
+                  <p class="review-commenter">정성현</p>
+                  <p class="review-rate">평점 ★4.7</p>
+                  <p>최은영 작가님의 다른 책들도 꼭 읽어보세요!</p>             
+                </div>
+                <div class="review">
+                  <p class="review-commenter">김민지</p>
+                  <p class="review-rate">평점 ★4.7</p>
+                  <p>주옥같은 단편 소설들이 한 권에 모여있어서 너무 좋아요!</p>             
+                </div>
+                <div class="review">
+                  <p class="review-commenter">이영범</p>
+                  <p class="review-rate">평점 ★5.0</p>
+                  <p>책을 펼치는 순간 쇼코의 미소를 상상할 수 있다 </p>
+                </div>
+                <div class="review">
+                  <p class="review-commenter">조세연</p>
+                  <p class="review-rate">평점 ★4.4</p>
+                  <p>책 더 써주세요!!</p>               
+                </div>
+                <div class="review">
+                  <p class="review-commenter">이은재</p>
+                  <p class="review-rate">평점 ★4.4</p>
+                  <p>읽을 때 마다 새롭네요</p>               
+                </div>
+                <div class="review">
+                  <p class="review-commenter">황상혁</p>
+                  <p class="review-rate">평점 ★4.4</p>
+                  <p>또 댓글 답니다~</p>               
+                </div>
+             </div> 
+            </div>
+          </div>
+        </div>
+       
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div id="main-footer"></div>
+    </footer>
+    <script src="../../common/login/login.js"></script>
+  </body>
+</html>

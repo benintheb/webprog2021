@@ -30,7 +30,7 @@ body {
 
 .page-wrapper {
   background-color: #1d1d1b;
-  width: fit-content;
+  min-width: 1320px;
 }
 
 /* 헤더 */
@@ -65,7 +65,7 @@ body {
   margin-top: 10px;
 }
 
-.nav-left > .logoDiv > a > .header-title {
+/* .nav-left > .logoDiv > a > .header-title {
   font-family: Rockwell;
   font-size: 40px;
 
@@ -74,7 +74,7 @@ body {
   margin-top: 20px;
 
   margin-left: 10px;
-}
+} */
 
 .nav-left > .tabs {
   display: flex;

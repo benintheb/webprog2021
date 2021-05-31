@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../../common/footer/footer.css" />
     <link rel="stylesheet" href="../../common/login/login.css" />
     <link rel="stylesheet" href="../../common/login/signup.css" />
-    <link rel="stylesheet" href="./graph.css"
+
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -146,21 +146,7 @@
               <img id="heart" src="../src/heart.png" alt="heart" width = "25px" height="25px" onclick="src='../src/full-heart.png'"></div>
               
             <div class="pickTitleDiv">
-              <div class="genreBox">액션</div>
-              <div class="genreBox">공포</div>
-              <div class="genreBox">로맨스</div>
-              <div class="rate">
-                <input type="radio" id="star5" name="rate" value="5" />
-                <label for="star5" title="text">5 stars</label>
-                <input type="radio" id="star4" name="rate" value="4" />
-                <label for="star4" title="text">4 stars</label>
-                <input type="radio" id="star3" name="rate" value="3" />
-                <label for="star3" title="text">3 stars</label>
-                <input type="radio" id="star2" name="rate" value="2" />
-                <label for="star2" title="text">2 stars</label>
-                <input type="radio" id="star1" name="rate" value="1" />
-                <label for="star1" title="text">1 star</label>
-              </div>
+              <div class="genreBox">판타지</div>
             </div>
             
             <div class="category" name="open">개봉</div>
@@ -176,13 +162,8 @@
           
             
           </div>
-          <div class="graph">
-            <div id="chart">
-              <h3>별점 그래프</h3>
-              <div id="graph">
-                <img src="../src/graph.PNG" alt="harryPotter" onclick="javascript:location.href='./graph.html'" width="500px;" style="cursor: pointer;">
-              </div>
-            </div>
+          <div class="video-stream">
+            <iframe width="614px" height="360" src="https://www.youtube.com/embed/eKSB0gXl9dw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></iframe>
           </div>
         </div>
         <div class="lowerDescDiv">
@@ -226,10 +207,11 @@
               </div>
             </div>
             <div id="character">
+
               <h3>출연 / 제작</h3>
               <div class="cardDiv">
                 <div class="card">
-                  <img class="card_image" src="https://ww.namu.la/s/8eb008e1e9034fd91b2dc3e0caafbab38e4ee7d706c86f6ca542c467bfb7c4432a7ffaa940acf63fe81baf7f7e8b1d42b445f9269915bff6a0b4ec7058ec9b0459f089e771e5a815c193e8987f5fabb41d27d390f859cf7976bc3f12255b04809d6ef173a510e40a424fe255cf1193f7" />
+                  <img class="card_image" src="https://img1.daumcdn.net/thumb/R720x0.q80/?scode=mtistory2&fname=http%3A%2F%2Fcfile22.uf.tistory.com%2Fimage%2F992F23375FE448FF311979" />
                   <div class="info">
                     <div class="info_title"><h5>다니엘 래드클리프(Daniel Radcliffe)</h5></div>
                     <h6>해리포터 역</h6>
@@ -243,7 +225,7 @@
                   </div>
                 </div>
                 <div class="card">
-                  <img class="card_image" src="https://w.namu.la/s/36b75f2218f00857ff900304bd8d3845c3e930452be5895b54ea3dcd9b331f9ee4b994e108c4db6d18c320e71d2480d92ee3a725a0f93eee1b64ea3567cff7a5e363ed5c61bedaef7b400d547219866b11f0a68fa19855fa233ea74f5a3ebaa52d08a21aeb6ca67953c12eaca4af9c9f" />
+                  <img class="card_image" src="data:image/jpeg;base64,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" />
                   <div class="info">
                     <div class="info_title"><h5>르퍼트 그린트(Rupert Grint)</h5></div>
                     <h6>론 위즐리 역</h6>
@@ -282,7 +264,23 @@
             </div>
           </div>
           <div id="right">
-            <h3>리뷰</h3>
+            <div class="review-rate">
+              <h2>리뷰</h2>
+              <div class="rate">
+                  <input type="radio" id="star5" name="rate" value="5" />
+                  <label for="star5" title="text">5 stars</label>
+                  <input type="radio" id="star4" name="rate" value="4" />
+                  <label for="star4" title="text">4 stars</label>
+                  <input type="radio" id="star3" name="rate" value="3" />
+                  <label for="star3" title="text">3 stars</label>
+                  <input type="radio" id="star2" name="rate" value="2" />
+                  <label for="star2" title="text">2 stars</label>
+                  <input type="radio" id="star1" name="rate" value="1" />
+                  <label for="star1" title="text">1 star</label>
+                </div>
+                <input  type="text" class="write-review" value="한 줄 리뷰 작성하기" onclick="value=''"/>
+                <button id="commentBtn" class="comment-button" onclick="alert('댓글이 작성되었습니다.')">작성</button>
+              </div>
               <div id="comment">
                 <div class="review">
                   <h3 class="review-title">신선해요!</h3>
