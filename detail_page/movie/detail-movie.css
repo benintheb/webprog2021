@@ -11,13 +11,18 @@
     sans-serif;
 }
 
+p,
+h3,
+h2,
+h4 {
+  color: white;
+}
 *::-webkit-scrollbar {
   display: none;
 }
 
 body {
   display: flex;
-
   flex-direction: column;
 }
 
@@ -56,19 +61,8 @@ body {
 }
 
 .nav-left > .logoDiv > a > .main-logo {
-  width: 70px;
-  height: 70px;
-}
-
-.nav-left > .logoDiv > a > .header-title {
-  font-family: Rockwell;
-  font-size: 40px;
-
-  color: white;
-
-  margin-top: 20px;
-
-  margin-left: 10px;
+  height: 50px;
+  margin-top: 10px;
 }
 
 .nav-left > .tabs {
@@ -138,6 +132,11 @@ body {
   cursor: pointer;
 }
 
+p#loginExitBtn,
+p#signUpExitBtn {
+  color: black !important;
+}
+
 .login-button {
   margin-left: 30px;
 }
@@ -147,14 +146,47 @@ body {
   margin: 0 auto;
   overflow: hidden;
 }
+.scrolling-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  scroll-behavior: smooth;
 
+  margin-top: 15px;
+  margin-bottom: 45px;
+}
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-thumb {
+  background: #a9a9a9;
+}
+.cardDiv {
+  display: flex;
+  margin-top: 10px;
+  overflow: scroll;
+}
+.card {
+  width: 223.5px;
+}
+
+.card_image {
+  border-radius: 5px;
+  height: 301.17px;
+  width: 243.5px;
+  margin: 0;
+}
 #content1 {
   height: fit-content;
   width: 1366px;
   margin: 0 auto;
+  margin-top: 10px;
   overflow: hidden;
   position: relative;
   box-shadow: 0 0px 6px rgba(100, 100, 100, 0.3);
+}
+.info {
+  color: white;
 }
 
 /* 영화 포스터 및 설명란 */
@@ -169,17 +201,40 @@ body {
 #section img {
   float: left;
 }
+.genreBox {
+  height: 6px;
+  margin: 8px 0 3px 5px;
+  padding: 10px 15px;
+  background-color: #07703c;
+  border-radius: 5px;
 
+  color: #d7d7d7;
+
+  text-align: center;
+  line-height: 5px;
+}
+.pickTitleDiv {
+  display: flex;
+}
+.content-title {
+  display: flex;
+}
+#heart {
+  padding-left: 220px;
+  padding-top: 10px;
+}
 /* 영화 정보 */
 #explanation {
   margin: 0 auto 30px auto;
-  width: 600px;
-  height: 360px;
+  width: 550px;
+  height: 330px;
   float: left;
   padding-left: 10px;
   border-right: 1px solid rgba(100, 100, 100, 0.3);
 }
-
+#heart {
+  display: flex;
+}
 .rate {
   padding-top: 10px;
 }
@@ -193,8 +248,14 @@ body {
   font-size: 120%;
   font-weight: bold;
   display: inline-block;
+  color: white;
 }
+.value {
+  padding-bottom: 10px;
+  font-size: 80%;
 
+  color: white;
+}
 #page-wrapper {
   background: white;
   height: fit-content;
@@ -204,61 +265,40 @@ body {
 }
 
 .box1 {
-  margin-top: 10px;
-  background-color: rgb(200, 255, 200);
+  margin-top: 8px;
+  /* background-color: rgb(200, 255, 200); */
   width: auto;
-  height: 50px;
-  border-radius: 8px;
-  border: 2px solid black;
-  text-align: center;
-  display: inline-block;
-  line-height: 50px;
+  /* border-radius: 8px;
+  border: 2px solid black; */
   border: none;
 }
-
 .graph {
-  padding: 20px;
-  float: right;
-  width: 526px;
-  height: 360px;
+  float: left;
+  width: 534px;
+  height: 320px;
   position: relative;
 }
-
-.graph input[type="button"] {
-  background-color: rgb(200, 255, 200);
-  border: none;
-  cursor: pointer;
-  border-radius: 2px;
-  font-weight: bold;
-}
-
-.graph input[id="grading"] {
-  border-radius: 0 2px 2px 0;
-}
-
-.graph input[type="button"]:hover,
-input[type="submit"]:hover {
-  background-color: rgb(78, 114, 78);
-  color: white;
+.graph img {
+  padding-top: 5px;
+  width: 520px;
+  height: 290px;
 }
 
 /* 줄거리, 평점 ~ 하단부 */
-
 .lowerDescDiv {
   display: flex;
+  margin-bottom: 50px;
 }
 
 #left {
   position: relative;
-  padding: 20px;
   float: left;
   width: 750px;
-  height: fit-content;
+  height: 339.33px;
   border-right: 1px solid rgba(100, 100, 100, 0.3);
   box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
   margin-bottom: 30px;
 }
-
 #summary_content {
   margin: 10px auto;
   border: 1px solid rgba(100, 100, 100, 0.3);
@@ -267,38 +307,89 @@ input[type="submit"]:hover {
   overflow: auto;
 }
 
-#character_list {
-  overflow-x: scroll;
-  white-space: nowrap;
-  height: 300px;
-  margin: 10px auto;
+#summary_content p {
+  font-size: 80%;
+}
+
+.info h6 {
+  padding-top: 5px;
+  font-size: 120%;
 }
 
 #character_list img {
-  width: 180px;
+  width: 220px;
 }
 
 #right {
   position: relative;
-  padding: 20px;
   float: right;
   width: 616px;
-  height: fit-content;
+  height: 736px;
   box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
-  overflow-y: auto;
-
+  overflow-y: scroll;
   margin-bottom: 30px;
 }
 
+.comment {
+  width: 616px;
+  height: 400px;
+  overflow: scroll;
+}
 .review {
-  text-overflow: ellipsis;
+  padding: 10px 20px;
+  width: 610px;
   white-space: nowrap;
-  height: 300px;
-  margin: 10px auto 50px auto;
+  margin: 10px auto 10px auto;
   border: 1px solid rgba(100, 100, 100, 0.3);
-  background-color: white;
 }
 
-.review p:last-child {
-  text-align: right;
+.review-commenter {
+  padding-bottom: 5px;
+  font-size: 90%;
+}
+.review-rate {
+  padding-bottom: 5px;
+  font-size: 70%;
+  color: gold;
+}
+.write-review {
+  width: 616px;
+  height: 336px;
+}
+
+.rate {
+  float: left;
+  height: 40px;
+  padding: 0px;
+  padding-left: 50px;
+}
+.rate:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+.rate:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ccc;
+}
+.rate:not(:checked) > label:before {
+  content: "★ ";
+}
+.rate > input:checked ~ label {
+  color: #ffc700;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #deb217;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
 }

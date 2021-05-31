@@ -24,11 +24,42 @@
   font-size: 28px;
 }
 
+.pickTitleDiv > .novel {
+  background-color: #83c236;
+}
+
+.pickTitleDiv > .sf {
+  background-color: #2734c4;
+}
+
+.pickTitleDiv > .cartoon {
+  background-color: #a11629;
+}
+
+.pickTitleDiv > .romance  {
+  background-color: #cf76c9;
+}
+
+.pickTitleDiv > .self_enrichment {
+  background-color: #8727ba;
+}
+
+.pickTitleDiv > .essay  {
+  background-color: #359ACC;
+}
+
+.pickTitleDiv > .inference  {
+  background-color: #878782;
+}
+
+.pickTitleDiv > .humanity  {
+  background-color: #C7C22C;
+}
+
 .genreBox {
   height: 7px;
   margin: 8px 0 0 15px;
   padding: 10px 15px;
-  background-color: #07703c;
   border-radius: 5px;
 
   color: #d7d7d7;

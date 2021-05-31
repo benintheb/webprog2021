@@ -24,11 +24,38 @@
   font-size: 28px;
 }
 
+.pickTitleDiv > .dance {
+  background-color: #83c236;
+}
+
+.pickTitleDiv > .ballad {
+  background-color: #2734c4;
+}
+
+.pickTitleDiv > .rock {
+  background-color: #878782;
+}
+
+.pickTitleDiv > .pop  {
+  background-color: #cf76c9;
+}
+
+.pickTitleDiv > .hiphop {
+  background-color: #8727ba;
+}
+
+.pickTitleDiv > .indie  {
+  background-color: #359ACC;
+}
+
+.pickTitleDiv > .RandB  {
+  background-color: #C7C22C;
+}
+
 .genreBox {
   height: 7px;
   margin: 8px 0 0 15px;
   padding: 10px 15px;
-  background-color: #07703c;
   border-radius: 5px;
 
   color: #d7d7d7;

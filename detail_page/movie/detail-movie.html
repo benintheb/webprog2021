@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../../common/footer/footer.css" />
     <link rel="stylesheet" href="../../common/login/login.css" />
     <link rel="stylesheet" href="../../common/login/signup.css" />
+    <link rel="stylesheet" href="./graph.css"
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -14,6 +15,7 @@
       $(document).ready(function () {
         $("#main-footer").load("../../common/footer/footer.html");
       });
+
       $(document).ready(function () {
         $(window).scroll(function () {
           if ($(this).scrollTop() > 200) {
@@ -27,6 +29,7 @@
           return false;
         });
       });
+      
     </script>
   </head>
   <body>
@@ -38,12 +41,9 @@
               <a href="../../index.html">
                 <img
                   class="main-logo"
-                  src="../../src/img/logo.png"
+                  src="../../src/img/logo2.png"
                   alt="로고"
-                  width="25px"
-                  height="25px"
                 />
-                <p class="header-title">PICKLE</p>
               </a>
             </div>
             <ul class="tabs">
@@ -78,7 +78,6 @@
               회원가입
             </button>
           </div>
-
           <div class="loginOuterWrapper">
             <div class="loginWrapper hidden">
               <div class="loginDiv">
@@ -138,41 +137,51 @@
         </div>
       </nav>
       <div id="content1">
-        <img src="http://placehold.it/1366x300" />
+        <img src="../src/harrypotter.jpg" width="1366px" height = "300px" />
         <div id="section">
-          <img src="http://placehold.it/240x360" />
+          <img src="../src/harrypotter11.jpg" width="240px" height="360px" />
           <div id="explanation">
-            <h2>해리포터와 마법사의 돌</h2>
+            <div class="content-title">
+              <h2>해리포터와 마법사의 돌</h2>
+              <img id="heart" src="../src/heart.png" alt="heart" width = "25px" height="25px" onclick="src='../src/full-heart.png'"></div>
+              
+            <div class="pickTitleDiv">
+              <div class="genreBox">액션</div>
+              <div class="genreBox">공포</div>
+              <div class="genreBox">로맨스</div>
+              <div class="rate">
+                <input type="radio" id="star5" name="rate" value="5" />
+                <label for="star5" title="text">5 stars</label>
+                <input type="radio" id="star4" name="rate" value="4" />
+                <label for="star4" title="text">4 stars</label>
+                <input type="radio" id="star3" name="rate" value="3" />
+                <label for="star3" title="text">3 stars</label>
+                <input type="radio" id="star2" name="rate" value="2" />
+                <label for="star2" title="text">2 stars</label>
+                <input type="radio" id="star1" name="rate" value="1" />
+                <label for="star1" title="text">1 star</label>
+              </div>
+            </div>
+            
             <div class="category" name="open">개봉</div>
             <div class="value" name="open">2001.12.14</div>
-            <div class="category" name="genre">장르</div>
-            <div class="value" name="genre">판타지, 가족, 모험, 액션</div>
             <div class="category" name="country">국가</div>
-            <div class="value" name="country">영국, 미국</div>
+            <div class="value" name="country">영국  미국</div>
             <div class="category" name="distributor">배급</div>
             <div class="value" name="distributor">워너 브라더스 코리아(주)</div>
-
-            <div class="box1" id="attendance">
-              <p>관객수 26만명</p>
-            </div>
-            <div class="box1" id="grade">
-              <p>평점 ★9.33</p>
-            </div>
-            <div class="rate">
-              <form>
-                <input type="button" id="keep" value="찜하기" />
-                <input type="text" class="grading" value="" /><input
-                  type="button"
-                  class="grading"
-                  value="평가하기"
-                />
-              </form>
-            </div>
+            <div class="category" name="distributor">관객수</div>
+            <div class="value" name="distributor">26만 명</div>
+            <div class="category" name="distributor">평점</div>
+            <div class="value" name="distributor">평점 ★4.1</div>
+          
+            
           </div>
           <div class="graph">
             <div id="chart">
               <h3>별점 그래프</h3>
-              <div id="graph"></div>
+              <div id="graph">
+                <img src="../src/graph.PNG" alt="harryPotter" onclick="javascript:location.href='./graph.html'" width="500px;" style="cursor: pointer;">
+              </div>
             </div>
           </div>
         </div>
@@ -181,6 +190,7 @@
             <div id="summary">
               <h3>줄거리</h3>
               <div id="summary_content">
+                <p>
                 해리 포터(다니엘 래드클리프 분)는 위압적인 버논 숙부(리챠드
                 그리피스 분)와 냉담한 이모 페투니아 (피오나 쇼 분), 욕심 많고
                 버릇없는 사촌 더즐리(해리 멜링 분) 밑에서 갖은 구박을 견디며
@@ -212,38 +222,109 @@
                 이마에 번개모양의 흉터를 남긴 장본인이다. 해리는 볼드모트로부터
                 마법의 돌과 호그와트 마법학교를 지키기 위해 필사의 노력을
                 하는데...
+                </p>
               </div>
             </div>
             <div id="character">
               <h3>출연 / 제작</h3>
-              <div id="character_list">
-                <img
-                  src="https://i.pinimg.com/564x/4e/59/cf/4e59cf11e65cd15b486b9aa324fc3dbb.jpg"
-                />
-                <img
-                  src="https://i.pinimg.com/564x/4e/59/cf/4e59cf11e65cd15b486b9aa324fc3dbb.jpg"
-                />
-                <img
-                  src="https://i.pinimg.com/564x/4e/59/cf/4e59cf11e65cd15b486b9aa324fc3dbb.jpg"
-                />
-                <img
-                  src="https://i.pinimg.com/564x/4e/59/cf/4e59cf11e65cd15b486b9aa324fc3dbb.jpg"
-                />
-                <img
-                  src="https://i.pinimg.com/564x/4e/59/cf/4e59cf11e65cd15b486b9aa324fc3dbb.jpg"
-                />
+              <div class="cardDiv">
+                <div class="card">
+                  <img class="card_image" src="https://ww.namu.la/s/8eb008e1e9034fd91b2dc3e0caafbab38e4ee7d706c86f6ca542c467bfb7c4432a7ffaa940acf63fe81baf7f7e8b1d42b445f9269915bff6a0b4ec7058ec9b0459f089e771e5a815c193e8987f5fabb41d27d390f859cf7976bc3f12255b04809d6ef173a510e40a424fe255cf1193f7" />
+                  <div class="info">
+                    <div class="info_title"><h5>다니엘 래드클리프(Daniel Radcliffe)</h5></div>
+                    <h6>해리포터 역</h6>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card_image" src="https://i.pinimg.com/564x/4e/59/cf/4e59cf11e65cd15b486b9aa324fc3dbb.jpg" />
+                  <div class="info">
+                    <div class="info_title"><h5>엠마 왓슨(Emma Watson)</h5></div>
+                    <h6>헤르미온느 역</h6>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card_image" src="https://w.namu.la/s/36b75f2218f00857ff900304bd8d3845c3e930452be5895b54ea3dcd9b331f9ee4b994e108c4db6d18c320e71d2480d92ee3a725a0f93eee1b64ea3567cff7a5e363ed5c61bedaef7b400d547219866b11f0a68fa19855fa233ea74f5a3ebaa52d08a21aeb6ca67953c12eaca4af9c9f" />
+                  <div class="info">
+                    <div class="info_title"><h5>르퍼트 그린트(Rupert Grint)</h5></div>
+                    <h6>론 위즐리 역</h6>
+                    </div>
+                </div>
+                
+                <div class="card">
+                  <img class="card_image" src="data:image/jpeg;base64,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" />
+                  <div class="info">
+                    <div class="info_title"><h5>리차드 해리스(Richard Harris)</h5></div>
+                    <h6>덤블도어 역</h6>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card_image" src="https://pbs.twimg.com/media/Ds1UN1mU8AEAjlc.jpg" />
+                  <div class="info">
+                    <div class="info_title"><h5>매기 스미스(Maggie Smith)</h5></div>
+                    <h6>미네르바 맥고나걸 역</h6>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card_image" src="https://img.insight.co.kr/static/2020/09/22/700/2ztfahm58l9091y87a32.jpg" />
+                  <div class="info">
+                    <div class="info_title"><h5>로비 콜트레인(Robbie Coltrane)</h5></div>
+                    <h6>루베우스 해그리드 역</h6>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card_image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGcUj3MkZUMNYURqMz8RtJAMbHmAy3152tdg&usqp=CAU" />
+                  <div class="info">
+                    <div class="info_title"><h5>알란 릭맨(Alan Rickman)</h5></div>
+                    <h6>스네이프 역</h6>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           <div id="right">
-            <div id="comment">
-              <div class="review">
-                <h3>리뷰 제목</h3>
-                <p>리뷰 내용</p>
-                <p>별점 닉네임</p>
-              </div>
+            <h3>리뷰</h3>
+              <div id="comment">
+                <div class="review">
+                  <h3 class="review-title">신선해요!</h3>
+                  <p class="review-commenter">손서영</p>
+                  <p class="review-rate">평점 ★4.7</p>
+                  <p>이런 영화가 계속 나왔으면 좋겠어요!</p>
+                </div>
+                <div class="review">
+                  <h3 class="review-title">너무 재밌게 봤어요</h3>
+                  <p class="review-commenter">김민지</p>
+                  <p class="review-rate">평점 ★4.3</p>
+                  <p>오랜만에 해리포터를 봤는데 너무나도 재밌게 봤습니다. 지금봐도 촌스럽지 않아요!</p>
+                </div>
+                <div class="review">
+                  <h3 class="review-title">노잼</h3>
+                  <p class="review-commenter">이은재</p>
+                  <p class="review-rate">평점 ★2.5</p>
+                  <p>기대를 많이 했는데 그냥 그래요~</p>
+                </div>
+                <div class="review">
+                  <h3 class="review-title">연기력이 다들 대단하네요</h3>
+                  <p class="review-commenter">정성현</p>
+                  <p class="review-rate">평점 ★4.6</p>
+                  <p>괜히 명작이 아닙니다 꼭 보세요!</p>             
+                </div>
+                <div class="review">
+                  <h3 class="review-title">헤르미온느...는 진짜..네요.. </h3>
+                  <p class="review-commenter">이영범</p>
+                  <p class="review-rate">평점 ★5.0</p>
+                  <p>헤르미온느 미모는 진짜네요</p>
+                </div>
+                <div class="review">
+                  <h3 class="review-title">영국 발음에 치이고 갑니다.</h3>
+                  <p class="review-commenter">황상혁</p>
+                  <p class="review-rate">평점 ★4.4</p>
+                  <p>영어 공부를 해야겠어요!</p>               
+                </div>
+             </div> 
             </div>
           </div>
+        </div>
+       
         </div>
       </div>
     </div>
